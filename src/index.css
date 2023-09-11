@@ -29,3 +29,227 @@ Footer {
   background: var(--brand-blue-300, #053766);
   text-decoration: none;
 }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+.left-icons,
+.right-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.central-icon {
+  text-align: center;
+}
+.cafehome {
+  position: relative; /* Adicione position: relative; para o contêiner pai */
+  display: flex;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%; /* Adicione isso para garantir que a imagem não ultrapasse o contêiner */
+}
+
+.cafehome img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.bannerbutton {
+  position: absolute;
+  bottom: 16px; /* Ajuste a distância da parte inferior conforme necessário */
+  right: 32px; /* Ajuste a distância da parte direita conforme necessário */
+  z-index: 2; /* Defina um valor maior de z-index para sobrepor a imagem */
+  padding: 15px var(--spacing-3, 24px);
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: transparent;
+  border-radius: 65px;
+  border: 1px solid var(--gray-0, #fff);
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.img-menu {
+  display: flex;
+  width: 393px;
+  padding: var(--spacing-4, 32px) 20px;
+  align-items: flex-start;
+  gap: var(--spacing-2, 16px);
+  border-radius: var(--Empty-cart, 0px);
+  background: var(--gray-900, #181818);
+  color: #8a8a8a;
+}
+
+.img-container {
+  width: 123px;
+  height: 166px;
+  border-radius: var(--radius-md, 8px);
+  border: 1px solid var(--gray-400, #8a8a8a);
+}
+
+.img-container img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  border-radius: var(--radius-md, 8px);
+  overflow: hidden;
+}
+.img-container p {
+  overflow: hidden;
+  text-overflow: ellipsis; /* Adiciona reticências ao texto que ultrapassar a altura */
+  white-space: nowrap; /* Impede que o texto seja quebrado em várias linhas */
+}
+.img-menu p {
+  margin-top: 10px;
+  font-weight: bold;
+}
+.productbanner {
+  background-color: #fff; /* Fundo branco */
+  padding: 20px;
+  border-radius: 8px; /* Bordas arredondadas */
+  text-align: left; /* Centraliza o conteúdo à esquerda */
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.section-description {
+  font-size: 16px;
+  color: #777; /* Cor de texto cinza */
+  margin-bottom: 20px; /* Espaçamento abaixo da descrição */
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alinha o conteúdo à esquerda */
+  border: 1px solid #ddd; /* Borda para separar os produtos */
+  border-radius: 8px;
+  margin-top: 20px; /* Espaçamento entre os produtos */
+  padding: 10px;
+  position: relative; /* Para posicionar o botão "Adicionar à sacola" */
+}
+
+.product-image-container {
+  padding: 10px;
+}
+
+.product-image {
+  width: 100%; /* Imagem ocupa toda a largura do contêiner */
+  height: auto; /* Altura ajustada automaticamente para manter a proporção */
+  object-fit: cover; /* Para manter a proporção da imagem */
+  border-radius: 8px; /* Bordas arredondadas para a imagem */
+}
+
+.card_title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px; /* Espaçamento entre o título e a descrição */
+}
+
+.card-description {
+  font-size: 16px;
+  color: #777; /* Cor de texto cinza */
+}
+
+.card_price {
+  font-size: 18px;
+  color: #e65100; /* Cor de preço laranja (ajuste conforme necessário) */
+  font-weight: bold;
+}
+
+.product-info {
+  padding: 10px;
+  position: relative; /* Para posicionar o botão "Adicionar à sacola" */
+}
+
+.button_add_cart {
+  background-color: #e65100; /* Cor de fundo do botão laranja */
+  color: #fff; /* Cor do texto do botão branco */
+  border: none;
+  border-radius: 8px; /* Bordas arredondadas para criar um botão */
+  width: 100px; /* Largura do botão */
+  font-size: 16px;
+  padding: 10px;
+  position: absolute; /* Posiciona o botão de forma absoluta */
+  bottom: 10px; /* Na parte inferior */
+  right: 10px; /* Na parte direita */
+  cursor: pointer;
+}
+
+.Info-panel {
+  background-color: #fff; /* Fundo branco */
+  padding: 20px;
+  border-radius: 8px; /* Bordas arredondadas */
+  text-align: left; /* Centraliza o conteúdo à esquerda */
+  max-width: 400px; /* Tamanho máximo do painel */
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  color: #777; /* Cor de texto cinza */
+  margin-bottom: 20px; /* Espaçamento abaixo da descrição */
+}
+
+.info-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alinha o conteúdo à esquerda */
+  border: 1px solid #ddd; /* Borda para separar os produtos */
+  border-radius: 8px;
+  margin-top: 20px; /* Espaçamento entre os produtos */
+  padding: 10px;
+  position: relative; /* Para posicionar o link */
+  max-width: 300px; /* Tamanho máximo do card de informações */
+}
+
+.info-image {
+  width: 100%; /* Largura da imagem ajustada */
+  height: auto; /* Altura ajustada automaticamente para manter a proporção */
+  object-fit: cover; /* Para manter a proporção da imagem */
+  border-radius: 8px; /* Bordas arredondadas para a imagem */
+}
+
+.info-text {
+  padding: 10px;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px; /* Espaçamento entre o título e a descrição */
+}
+
+p {
+  font-size: 16px;
+  color: #777; /* Cor de texto cinza */
+}
+
+a {
+  color: #e65100; /* Cor do link laranja (ajuste conforme necessário) */
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px; /* Espaçamento entre a descrição e o link */
+}
+
+a:hover {
+  text-decoration: underline; /* Sublinhado ao passar o mouse */
+}
