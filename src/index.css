@@ -31,7 +31,10 @@ Footer {
 }
 
 header {
+  position: sticky;
   display: flex;
+  top: 0;
+  z-index: 1020;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
@@ -180,12 +183,12 @@ header {
   color: #fff; /* Cor do texto do botão branco */
   border: none;
   border-radius: 8px; /* Bordas arredondadas para criar um botão */
-  width: 100px; /* Largura do botão */
+  width: 40px; /* Largura do botão */
   font-size: 16px;
   padding: 10px;
   position: absolute; /* Posiciona o botão de forma absoluta */
-  bottom: 10px; /* Na parte inferior */
-  right: 10px; /* Na parte direita */
+  bottom: 200px; /* Na parte inferior */
+  right: 25px; /* Na parte direita */
   cursor: pointer;
 }
 
@@ -196,7 +199,9 @@ header {
   text-align: left; /* Centraliza o conteúdo à esquerda */
   max-width: 400px; /* Tamanho máximo do painel */
 }
-
+.testee{
+  margin-right: 10px;
+}
 h1 {
   font-size: 24px;
   font-weight: bold;
@@ -211,14 +216,13 @@ p {
 
 .info-card {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: flex-start; /* Alinha o conteúdo à esquerda */
   border: 1px solid #ddd; /* Borda para separar os produtos */
   border-radius: 8px;
   margin-top: 20px; /* Espaçamento entre os produtos */
-  padding: 10px;
   position: relative; /* Para posicionar o link */
-  max-width: 300px; /* Tamanho máximo do card de informações */
+  max-width: 200px; /* Tamanho máximo do card de informações */
 }
 
 .info-image {

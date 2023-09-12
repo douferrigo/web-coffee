@@ -18,18 +18,20 @@ function InfoCard(props) {
     <div className="Info-panel">
       <h1>Conheça mais!</h1>
       <p>Fique por dentro de tudo que acontece no universo cafeeiro</p>
-      <Slider {...infoCarrossel}>
-        {props.infoList.map((item) => (
-          <div className="info-card">
-            <img src={item.img} alt={item.alt} className="info-image" />
-            <div className="info-text">
-              <h3>{item.title}</h3>
-              <p>{item.description}</p>
-              <a href="#">{item.link}</a>
+      <div className="testee">
+        <Slider {...infoCarrossel}>
+          {props.infoList.map((item) => (
+            <div className="info-card">
+              <img src={item.img} alt={item.alt} className="info-image" />
+              <div className="info-text">
+                <h3>{item.title}</h3>
+                <p>{item.description}</p>
+                <a href="#">{item.link}</a>
+             </div>
             </div>
-          </div>
-        ))}
-      </Slider>
+          ))}
+        </Slider>
+      </div>
     </div>
   );
 }

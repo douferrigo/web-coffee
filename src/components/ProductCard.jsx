@@ -6,9 +6,9 @@ function ProductCard(props) {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
+    slidesToShow: 2,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 8000,
   };
   return (
@@ -22,14 +22,15 @@ function ProductCard(props) {
           <div className="product-card">
             <div className="product-image-container">
               <img src={item.img} alt="" className="product-image" />
+              <button type="button" className="button_add_cart">
+                +
+              </button>
             </div>
             <div className="product-info">
               <h2 className="card_title">{item.title}</h2>
               <p className="card-description">{item.description}</p>
               <h2 className="card_price">{item.price}</h2>
-              <button type="button" className="button_add_cart">
-                Adicionar à sacola
-              </button>
+              
             </div>
           </div>
         ))}
