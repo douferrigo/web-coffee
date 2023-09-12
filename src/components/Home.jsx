@@ -3,7 +3,6 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Header from "./Header/Header";
-import MenuHome from "./MenuHome";
 import Cafe1 from "../img/Cafe1.png";
 import Cafe2 from "../img/Cafe2.png";
 
@@ -35,7 +34,6 @@ function Home(props) {
             </button>
           </div>
         </Slider>
-        <MenuHome />
       </main>
     </>
   );

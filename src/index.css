@@ -1,4 +1,6 @@
-body {
+
+
+  body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -17,19 +19,6 @@ Menu {
   height: 852px;
   border-radius: var(--Empty-cart, 0px);
 }
-
-Footer {
-  color: #fff;
-  display: flex;
-  padding: 48px 20px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 48px;
-  border-radius: var(--Empty-cart, 0px);
-  background: var(--brand-blue-300, #053766);
-  text-decoration: none;
-}
-
 header {
   position: sticky;
   display: flex;
@@ -52,12 +41,12 @@ header {
   text-align: center;
 }
 .cafehome {
-  position: relative; /* Adicione position: relative; para o contêiner pai */
+  position: relative; 
   display: flex;
   background-size: cover;
   justify-content: center;
   align-items: center;
-  max-width: 100%; /* Adicione isso para garantir que a imagem não ultrapasse o contêiner */
+  max-width: 100%; 
 }
 
 .cafehome img {
@@ -66,9 +55,9 @@ header {
 }
 .bannerbutton {
   position: absolute;
-  bottom: 16px; /* Ajuste a distância da parte inferior conforme necessário */
-  right: 32px; /* Ajuste a distância da parte direita conforme necessário */
-  z-index: 2; /* Defina um valor maior de z-index para sobrepor a imagem */
+  bottom: 16px;  
+  right: 32px;  
+  z-index: 2; 
   padding: 15px var(--spacing-3, 24px);
   justify-content: center;
   align-items: center;
@@ -108,18 +97,18 @@ header {
 }
 .img-container p {
   overflow: hidden;
-  text-overflow: ellipsis; /* Adiciona reticências ao texto que ultrapassar a altura */
-  white-space: nowrap; /* Impede que o texto seja quebrado em várias linhas */
+  text-overflow: ellipsis; 
+  white-space: nowrap;
 }
 .img-menu p {
   margin-top: 10px;
   font-weight: bold;
 }
 .productbanner {
-  background-color: #fff; /* Fundo branco */
+  background-color: #fff; 
   padding: 20px;
-  border-radius: 8px; /* Bordas arredondadas */
-  text-align: left; /* Centraliza o conteúdo à esquerda */
+  border-radius: 8px; 
+  text-align: left; 
 }
 
 .section-title {
@@ -130,19 +119,19 @@ header {
 
 .section-description {
   font-size: 16px;
-  color: #777; /* Cor de texto cinza */
-  margin-bottom: 20px; /* Espaçamento abaixo da descrição */
+  color: #777; 
+  margin-bottom: 20px; 
 }
 
 .product-card {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Alinha o conteúdo à esquerda */
-  border: 1px solid #ddd; /* Borda para separar os produtos */
+  align-items: flex-start; 
+  border: 1px solid #ddd; 
   border-radius: 8px;
-  margin-top: 20px; /* Espaçamento entre os produtos */
+  margin-top: 20px; 
   padding: 10px;
-  position: relative; /* Para posicionar o botão "Adicionar à sacola" */
+  position: relative;
 }
 
 .product-image-container {
@@ -150,110 +139,73 @@ header {
 }
 
 .product-image {
-  width: 100%; /* Imagem ocupa toda a largura do contêiner */
-  height: auto; /* Altura ajustada automaticamente para manter a proporção */
-  object-fit: cover; /* Para manter a proporção da imagem */
-  border-radius: 8px; /* Bordas arredondadas para a imagem */
+  width: 100%; 
+  height: auto; 
+  object-fit: cover; 
+  border-radius: 8px; 
 }
 
 .card_title {
   font-size: 18px;
   font-weight: bold;
-  margin-top: 10px; /* Espaçamento entre o título e a descrição */
+  margin-top: 10px; 
 }
 
 .card-description {
   font-size: 16px;
-  color: #777; /* Cor de texto cinza */
+  color: #777; 
 }
 
 .card_price {
   font-size: 18px;
-  color: #e65100; /* Cor de preço laranja (ajuste conforme necessário) */
+  color: #e65100;
   font-weight: bold;
 }
 
 .product-info {
   padding: 10px;
-  position: relative; /* Para posicionar o botão "Adicionar à sacola" */
+  position: relative; 
 }
 
 .button_add_cart {
-  background-color: #e65100; /* Cor de fundo do botão laranja */
-  color: #fff; /* Cor do texto do botão branco */
+  background-color: #e65100; 
+  color: #fff; 
   border: none;
-  border-radius: 8px; /* Bordas arredondadas para criar um botão */
-  width: 40px; /* Largura do botão */
+  border-radius: 8px; 
+  width: 40px; 
   font-size: 16px;
   padding: 10px;
-  position: absolute; /* Posiciona o botão de forma absoluta */
-  bottom: 200px; /* Na parte inferior */
-  right: 25px; /* Na parte direita */
+  position: absolute; 
+  bottom: 200px; 
+  right: 25px; 
   cursor: pointer;
 }
 
 .Info-panel {
-  background-color: #fff; /* Fundo branco */
+  background-color: #fff; 
   padding: 20px;
-  border-radius: 8px; /* Bordas arredondadas */
-  text-align: left; /* Centraliza o conteúdo à esquerda */
-  max-width: 400px; /* Tamanho máximo do painel */
+  border-radius: 8px; 
+  text-align: left; 
+  max-width: 400px; 
 }
-.testee{
-  margin-right: 10px;
-}
-h1 {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-p {
-  font-size: 16px;
-  color: #777; /* Cor de texto cinza */
-  margin-bottom: 20px; /* Espaçamento abaixo da descrição */
-}
-
 .info-card {
   display: flex;
   flex-direction: row;
-  align-items: flex-start; /* Alinha o conteúdo à esquerda */
-  border: 1px solid #ddd; /* Borda para separar os produtos */
+  align-items: flex-start; 
+  border: 1px solid #ddd; 
   border-radius: 8px;
-  margin-top: 20px; /* Espaçamento entre os produtos */
-  position: relative; /* Para posicionar o link */
-  max-width: 200px; /* Tamanho máximo do card de informações */
+  margin-top: 20px; 
+  position: relative; 
+  max-width: 200px; 
 }
 
 .info-image {
-  width: 100%; /* Largura da imagem ajustada */
-  height: auto; /* Altura ajustada automaticamente para manter a proporção */
-  object-fit: cover; /* Para manter a proporção da imagem */
-  border-radius: 8px; /* Bordas arredondadas para a imagem */
+  width: 100%; 
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px; 
 }
 
 .info-text {
   padding: 10px;
-}
-
-h3 {
-  font-size: 18px;
-  font-weight: bold;
-  margin-top: 10px; /* Espaçamento entre o título e a descrição */
-}
-
-p {
-  font-size: 16px;
-  color: #777; /* Cor de texto cinza */
-}
-
-a {
-  color: #e65100; /* Cor do link laranja (ajuste conforme necessário) */
-  text-decoration: none;
-  font-weight: bold;
-  margin-top: 10px; /* Espaçamento entre a descrição e o link */
-}
-
-a:hover {
-  text-decoration: underline; /* Sublinhado ao passar o mouse */
 }

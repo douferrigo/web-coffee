@@ -3,8 +3,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./index.css";
 import Home from "./components/Home";
-
-import Footer from "./components/Footer";
+import MenuHome from "./components/MenuHome";
+import Footer from "./components/Footer/Footer";
 import ProductCard from "./components/ProductCard";
 import InfoCard from "./components/InfoCard";
 import Cafe1 from "./img/Cafe1.png";
@@ -13,6 +13,10 @@ import Arabe from "./img/Arabe.png";
 import Creatina from "./img/Creatina.png";
 import Cafeteria from "./img/Cafeteria.png";
 import Pudim from "./img/Pudim.png";
+import Especial from "./img/Especial.png";
+import Tradicional from "./img/Tradicional.png";
+import Kit from "./img/Kit.png";
+import Club from "./img/Club.png";
 
 const coffesList = [
   {
@@ -71,10 +75,38 @@ const infoList = [
   },
 ];
 
+const menuList = [
+  {
+    id: 1,
+    img: Especial,
+    alt: "Cafés especiais",
+    title:"Especiais",
+  },
+  {
+    id: 2,
+    img: Tradicional,
+    alt: "Cafés tradicionais",
+    title:"Tradicionais",
+  },
+  {
+    id: 3,
+    img: Kit,
+    alt: "Kits",
+    title: "Kits",
+  },
+  {
+    id: 4,
+    img: Club,
+    alt: "Wecoffee club",
+    title:"WeCoffee Club+"
+  }
+]
+
 function App() {
   return (
     <div className="App">
       <Home />
+      <MenuHome menuList={menuList}/> 
       <ProductCard coffesList={coffesList} />
       <InfoCard infoList={infoList} />
       <Footer />

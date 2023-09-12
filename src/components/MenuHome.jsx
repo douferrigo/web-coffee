@@ -2,11 +2,6 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Especial from "../img/Especial.png";
-import Tradicional from "../img/Tradicional.png";
-import Kit from "../img/Kit.png";
-import Club from "../img/Club.png";
-
 function MenuHome(props) {
   const homeCarrossel = {
     dots: false,
@@ -18,30 +13,14 @@ function MenuHome(props) {
   };
   return (
     <Slider {...homeCarrossel}>
-      <div className="img-menu">
+      {props.menuList.map((item)=>(
+        <div className="img-menu">
         <div className="img-container">
-          <img src={Especial} alt="Cafés especiais" />
+          <img src={item.img} alt={item.alt} />
         </div>
-        <p>Especiais</p>
+        <p>{item.title}</p>
       </div>
-      <div className="img-menu">
-        <div className="img-container">
-          <img src={Tradicional} alt="Cafés tradicionais" />
-        </div>
-        <p>Tradicionais</p>
-      </div>
-      <div className="img-menu">
-        <div className="img-container">
-          <img src={Kit} alt="Kits" />
-        </div>
-        <p>Kits</p>
-      </div>
-      <div className="img-menu">
-        <div className="img-container">
-          <img src={Club} alt="Wecoffee club" />
-        </div>
-        <p>Wecoffee Club +</p>
-      </div>
+      ))}
     </Slider>
   );
 }
