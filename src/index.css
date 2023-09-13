@@ -17,27 +17,6 @@ Menu {
   height: 852px;
   border-radius: var(--Empty-cart, 0px);
 }
-header {
-  position: sticky;
-  display: flex;
-  top: 0;
-  z-index: 1020;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background-color: #333;
-  color: #fff;
-}
-
-.left-icons,
-.right-icons {
-  display: flex;
-  gap: 10px;
-}
-
-.central-icon {
-  text-align: center;
-}
 
 .img-menu {
   display: flex;
@@ -74,21 +53,6 @@ header {
   margin-top: 10px;
   font-weight: bold;
 }
-.productbanner {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  text-align: left;
-}
 
-.section-title {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
 
-.section-description {
-  font-size: 16px;
-  color: #777;
-  margin-bottom: 20px;
-}
+

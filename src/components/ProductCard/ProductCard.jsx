@@ -22,7 +22,7 @@ function ProductCard(props) {
       </p>
       <Slider {...productCarrossel}>
         {props.coffesList.map((item) => (
-          <div className="product-card">
+          <div className="product-card" key={item.id}>
             <div className="product-image-container">
               <img src={item.img} alt="" className="product-image" />
               <button type="button" className="button_add_bag">
