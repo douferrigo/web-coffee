@@ -1,5 +1,8 @@
 import React from "react";
 import Slider from "react-slick";
+import "./styles.css";
+import ShopBagSvg from "../../svg/ShopBagSvg";
+import StarSvg from "../../svg/StarSvg";
 
 function ProductCard(props) {
   const productCarrossel = {
@@ -22,15 +25,17 @@ function ProductCard(props) {
           <div className="product-card">
             <div className="product-image-container">
               <img src={item.img} alt="" className="product-image" />
-              <button type="button" className="button_add_cart">
-                +
+              <button type="button" className="button_add_bag">
+                <ShopBagSvg />
+              </button>
+              <button type="button" className="button_add_star">
+                <StarSvg />
               </button>
             </div>
             <div className="product-info">
               <h2 className="card_title">{item.title}</h2>
               <p className="card-description">{item.description}</p>
               <h2 className="card_price">{item.price}</h2>
-              
             </div>
           </div>
         ))}

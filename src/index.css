@@ -1,6 +1,4 @@
-
-
-  body {
+body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -41,12 +39,12 @@ header {
   text-align: center;
 }
 .cafehome {
-  position: relative; 
+  position: relative;
   display: flex;
   background-size: cover;
   justify-content: center;
   align-items: center;
-  max-width: 100%; 
+  max-width: 100%;
 }
 
 .cafehome img {
@@ -55,9 +53,9 @@ header {
 }
 .bannerbutton {
   position: absolute;
-  bottom: 16px;  
-  right: 32px;  
-  z-index: 2; 
+  bottom: 16px;
+  right: 32px;
+  z-index: 2;
   padding: 15px var(--spacing-3, 24px);
   justify-content: center;
   align-items: center;
@@ -97,7 +95,7 @@ header {
 }
 .img-container p {
   overflow: hidden;
-  text-overflow: ellipsis; 
+  text-overflow: ellipsis;
   white-space: nowrap;
 }
 .img-menu p {
@@ -105,10 +103,10 @@ header {
   font-weight: bold;
 }
 .productbanner {
-  background-color: #fff; 
+  background-color: #fff;
   padding: 20px;
-  border-radius: 8px; 
-  text-align: left; 
+  border-radius: 8px;
+  text-align: left;
 }
 
 .section-title {
@@ -119,93 +117,6 @@ header {
 
 .section-description {
   font-size: 16px;
-  color: #777; 
-  margin-bottom: 20px; 
-}
-
-.product-card {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start; 
-  border: 1px solid #ddd; 
-  border-radius: 8px;
-  margin-top: 20px; 
-  padding: 10px;
-  position: relative;
-}
-
-.product-image-container {
-  padding: 10px;
-}
-
-.product-image {
-  width: 100%; 
-  height: auto; 
-  object-fit: cover; 
-  border-radius: 8px; 
-}
-
-.card_title {
-  font-size: 18px;
-  font-weight: bold;
-  margin-top: 10px; 
-}
-
-.card-description {
-  font-size: 16px;
-  color: #777; 
-}
-
-.card_price {
-  font-size: 18px;
-  color: #e65100;
-  font-weight: bold;
-}
-
-.product-info {
-  padding: 10px;
-  position: relative; 
-}
-
-.button_add_cart {
-  background-color: #e65100; 
-  color: #fff; 
-  border: none;
-  border-radius: 8px; 
-  width: 40px; 
-  font-size: 16px;
-  padding: 10px;
-  position: absolute; 
-  bottom: 200px; 
-  right: 25px; 
-  cursor: pointer;
-}
-
-.Info-panel {
-  background-color: #fff; 
-  padding: 20px;
-  border-radius: 8px; 
-  text-align: left; 
-  max-width: 400px; 
-}
-.info-card {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start; 
-  border: 1px solid #ddd; 
-  border-radius: 8px;
-  margin-top: 20px; 
-  position: relative; 
-  max-width: 200px; 
-}
-
-.info-image {
-  width: 100%; 
-  height: auto;
-  object-fit: cover;
-  border-radius: 8px; 
-}
-
-.info-text {
-  padding: 10px;
+  color: #777;
+  margin-bottom: 20px;
 }

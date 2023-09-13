@@ -5,8 +5,8 @@ import "./index.css";
 import Home from "./components/Home";
 import MenuHome from "./components/MenuHome";
 import Footer from "./components/Footer/Footer";
-import ProductCard from "./components/ProductCard";
-import InfoCard from "./components/InfoCard";
+import ProductCard from "./components/ProductCard/ProductCard";
+import InfoCard from "./components/Infocard/InfoCard";
 import Cafe1 from "./img/Cafe1.png";
 import Cafe2 from "./img/Cafe2.png";
 import Arabe from "./img/Arabe.png";
@@ -24,7 +24,7 @@ const coffesList = [
     img: Cafe1,
     alt: "",
     price: "R$ 15,90",
-    title: "Café Dev",
+    title: "Café Dev - 500ml",
     description: "Rapadura, floral, papaia, cítrico",
   },
   {
@@ -32,7 +32,7 @@ const coffesList = [
     img: Cafe2,
     alt: "",
     price: "R$ 15,90",
-    title: "Café Designer",
+    title: "Café Designer - 500ml",
     description: "Doce de leite, chocolate e nozes",
   },
 ];
@@ -70,7 +70,7 @@ const infoList = [
     alt: "imagem 4",
     title: "Café Arábica: saiba o que é e quais as diferenças do grão",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod minus exercitationem perferendis fugiat dolore sint unde, possimus, assumenda sit iusto ex magnam! Minus non ipsum eveniet exercitationem aliquam suscipit sunt.",
+      "Coffea arabica é uma espécie de café natural da Arábia ou da Etiópia, A espécie Coffea arabica produz cafés de qualidade, finos e requintados, e possui aroma intenso e os mais diversos sabores, com inúmeras variações de corpo e acidez. ",
     link: "Saiba mais!",
   },
 ];
@@ -80,13 +80,13 @@ const menuList = [
     id: 1,
     img: Especial,
     alt: "Cafés especiais",
-    title:"Especiais",
+    title: "Especiais",
   },
   {
     id: 2,
     img: Tradicional,
     alt: "Cafés tradicionais",
-    title:"Tradicionais",
+    title: "Tradicionais",
   },
   {
     id: 3,
@@ -98,15 +98,15 @@ const menuList = [
     id: 4,
     img: Club,
     alt: "Wecoffee club",
-    title:"WeCoffee Club+"
-  }
-]
+    title: "WeCoffee Club+",
+  },
+];
 
 function App() {
   return (
     <div className="App">
       <Home />
-      <MenuHome menuList={menuList}/> 
+      <MenuHome menuList={menuList} />
       <ProductCard coffesList={coffesList} />
       <InfoCard infoList={infoList} />
       <Footer />
