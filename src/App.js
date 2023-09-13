@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./index.css";
-import Home from "./components/Home";
+import Home from "./components/Home/Home";
 import MenuHome from "./components/MenuHome";
 import Footer from "./components/Footer/Footer";
 import ProductCard from "./components/ProductCard/ProductCard";
@@ -101,11 +101,25 @@ const menuList = [
     title: "WeCoffee Club+",
   },
 ];
-
+const homeList = [
+  { id:1,
+    img: Cafe1,
+    text: ".[Café Dev]; 500ml",
+    complement: "com 10% OFF",
+    alt: "Banner 1",
+},
+{
+  id:2,
+  img: Cafe2,
+  text: "Café Designer - 500ml",
+  complement: "Lançamento",
+  alt: "Banner 2",
+},
+]
 function App() {
   return (
     <div className="App">
-      <Home />
+      <Home homeList={homeList}/>
       <MenuHome menuList={menuList} />
       <ProductCard coffesList={coffesList} />
       <InfoCard infoList={infoList} />

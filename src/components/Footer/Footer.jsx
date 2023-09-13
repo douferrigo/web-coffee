@@ -66,7 +66,7 @@ function Footer() {
           <h3>Endereço</h3>
           <ul className="subMenu">
             <li>
-              <a href="#">bla bla bla ali</a>
+              <a href="#">Rua Independência, 2432 - sala 418 Caxias do Sul, RS - 95.082-380</a>
             </li>
           </ul>
         </div>

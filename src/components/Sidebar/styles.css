@@ -1,0 +1,55 @@
+@font-face {
+    font-family: Raleway;
+    src: url(../../../Raleway/static/Raleway-Regular.ttf);
+  }
+a {
+    color: black;
+}
+a:hover{
+    color: blueviolet;
+}
+.container-img {
+    position: relative;
+    font-family: Raleway;
+}
+.container-img img{
+    width: 100%;
+}
+.container-img h1 {
+    position: absolute;
+    color:rgb(255, 255, 255);
+    text-align: left;
+    padding: 0;
+    bottom: 45px;
+    margin-left: 10px;
+}
+.container-img p {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    padding: 0;
+    bottom: 5px;
+    margin-left: 5px;
+}
+.submenu {
+    padding: 10px;
+}
+.submenu-itens {
+    font-family: Raleway;
+    margin-right: 20px;
+    margin-bottom:20px;
+
+}
+.submenu-title {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: left;
+    margin-bottom: 10px ;
+}
+.submenu-club {
+    color:blue;
+}

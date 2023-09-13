@@ -1,0 +1,43 @@
+.cafehome-container{
+    position: relative;
+    display: flex;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+  }
+   .item-text {
+    position: absolute;
+    padding: 0;
+    top: 20px;
+    left: 30px;
+    text-align: center;
+   }
+   .item-description {
+    position: absolute;
+    padding: 0;
+    top: 100px;
+    left: 50px;
+    text-align: center;
+    font-size: 20px;
+   }
+  .cafehome-container img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .bannerbutton {
+    position: absolute;
+    bottom: 70px;
+    right: 32px;
+    z-index: 2;
+    padding: 15px var(--spacing-3, 24px);
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: transparent;
+    border-radius: 65px;
+    border: 1px solid var(--gray-0, #fff);
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }

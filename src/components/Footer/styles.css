@@ -59,6 +59,10 @@ Footer {
     .svg-item:last-child {
     margin-right: 0;
   }
-  a:link{
+  .footer-content a{
     color: #fff;
+    font-size: 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
   }
