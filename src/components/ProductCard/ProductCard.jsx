@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "./styles.css";
 import ShopBagSvg from "../../svg/ShopBagSvg";
 import StarSvg from "../../svg/StarSvg";
+import Toastify from "toastify-js";
 
 function ProductCard(props) {
   const [cartItemCount, setCartItemCount] = useState(0);
@@ -19,9 +20,24 @@ function ProductCard(props) {
 
   const addToCart = () => {
     props.onAddToCart(props.product);
-
     setCartItemCount(cartItemCount + 1);
+    showAlert();
   };
+
+  function showAlert() {
+    Toastify({
+      text: "Produto adicionado ao carrinho",
+      duration: 3000,
+      newWindow: true,
+      gravity: "top",
+      position: "center",
+      stopOnFocus: true,
+      style: {
+        background: "linear-gradient(to right, #4B0082, #8B008B)",
+      },
+      onClick1: function () {},
+    }).showToast();
+  }
 
   return (
     <div className="productbanner">

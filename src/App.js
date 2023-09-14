@@ -119,12 +119,21 @@ function App() {
   };
   return (
     <div className="App">
+      <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+      ></link>
       <Header cartItemCount={cart.length} />
       <Home homeList={homeList} />
       <MenuHome menuList={menuList} />
       <ProductCard coffesList={coffesList} onAddToCart={addToCart} />
       <InfoCard infoList={infoList} />
       <Footer />
+      <script
+        type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/toastify-js"
+      ></script>
     </div>
   );
 }

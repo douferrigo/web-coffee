@@ -2,7 +2,7 @@
   font-family: Raleway;
   src: url(../../../Raleway/static/Raleway-Regular.ttf);
 }
-.img-menu {
+.img-container {
   display: flex;
   padding: var(--spacing-4, 32px) 20px;
   align-items: flex-start;
@@ -11,18 +11,18 @@
   color: #8a8a8a;
 }
 
-.img-container {
+.img-menu {
   height: 166px;
   border-radius: var(--radius-md, 8px);
   border: 1px solid var(--gray-400, #8a8a8a);
   overflow: hidden;
 }
 
-.img-container img {
+.img-menu img {
   width: 100%;
   height: auto;
 }
-.img-menu p {
+.img-container p {
   margin-top: 10px;
   font-family: Raleway;
   font-weight: bold;

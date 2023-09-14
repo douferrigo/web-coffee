@@ -15,8 +15,8 @@ function MenuHome(props) {
   return (
     <Slider {...homeCarrossel}>
       {props.menuList.map((item) => (
-        <div className="img-menu" key={item.id}>
-          <div className="img-container">
+        <div className="img-container" key={item.id}>
+          <div className="img-menu">
             <img src={item.img} alt={item.alt} />
           </div>
           <p>{item.title}</p>

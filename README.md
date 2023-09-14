@@ -1,2 +1,2 @@
-Esse é o meu primeiro projeto utilizando react, utilizei styled-components para algumas funcionalidaes e slick para os carrosséis, ao clicar no botão de menu na barra de navegação um menu lateral se abre, e ao clicar no botão de adicionar à sacola no card de produto, o logo na bara de navegação também irá se atualizar.
+Esse é o meu primeiro projeto utilizando react, um site de uma cafeteria com foco no mobile. Utilizei styled-components para algumas funcionalidaes, slick para os carrosséis e toastfy para os alerts, ao clicar no botão de menu na barra de navegação um menu lateral se abre, e ao clicar no botão de adicionar à sacola no card de produto, o logo na barra de navegação também irá se atualizar junto a uma notificação.
 Espero que gostem :)!
