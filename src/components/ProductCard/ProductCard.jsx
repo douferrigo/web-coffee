@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import Slider from "react-slick";
 import "./styles.css";
 import ShopBagSvg from "../../svg/ShopBagSvg";
 import StarSvg from "../../svg/StarSvg";
 
 function ProductCard(props) {
+  const [cartItemCount, setCartItemCount] = useState(0);
+
   const productCarrossel = {
     dots: true,
     infinite: true,
@@ -14,6 +16,13 @@ function ProductCard(props) {
     autoplay: false,
     autoplaySpeed: 8000,
   };
+
+  const addToCart = () => {
+    props.onAddToCart(props.product);
+
+    setCartItemCount(cartItemCount + 1);
+  };
+
   return (
     <div className="productbanner">
       <h2 className="section-title">Os favoritos da casa</h2>
@@ -25,7 +34,11 @@ function ProductCard(props) {
           <div className="product-card" key={item.id}>
             <div className="product-image-container">
               <img src={item.img} alt="" className="product-image" />
-              <button type="button" className="button_add_bag">
+              <button
+                type="button"
+                className="button_add_bag"
+                onClick={addToCart}
+              >
                 <ShopBagSvg />
               </button>
               <button type="button" className="button_add_star">

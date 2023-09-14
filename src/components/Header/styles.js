@@ -11,7 +11,7 @@ export const Container = styled.div`
     cursor: pointer;
   }
 
-    .navbar {
+  .navbar {
     position: sticky;
     display: flex;
     top: 0;
@@ -21,10 +21,11 @@ export const Container = styled.div`
     padding: 20px;
     color: #fff;
     transition: background-color 0.3s;
-    background: transparent;
+    background: black;
   }
+
   header.active {
-    background : black;
+    background: black;
   }
 
   .left-icons,
@@ -36,6 +37,13 @@ export const Container = styled.div`
   .central-icon {
     text-align: center;
   }
-`;
 
-   
+  .cart-button {
+    background: black;
+    border: none;
+  }
+
+  .cart-item-count {
+    color: white;
+  }
+`;

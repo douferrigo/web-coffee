@@ -1,12 +1,13 @@
 import React from "react";
-function StarSvg() {
+
+function StarSvg({ fill }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="16"
       height="16"
       viewBox="0 0 16 16"
-      fill="none"
+      fill={fill}
     >
       <rect width="largura" height="altura" fill="none" opacity="0" />
       <g clip-path="url(#clip0_880_179)">
@@ -23,4 +24,5 @@ function StarSvg() {
     </svg>
   );
 }
+
 export default StarSvg;

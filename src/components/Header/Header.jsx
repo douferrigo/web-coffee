@@ -6,35 +6,32 @@ import LupaSvg from "../../svg/LupaSvg";
 import AccountSvg from "../../svg/AccountSvg";
 import Sidebar from "../Sidebar/Sidebar";
 import { Container } from "./styles";
-import styled from "styled-components";
 
-function Header() {
+function Header({ cartItemCount }) {
   const [sidebar, setSidebar] = useState(false);
-  const [headerTransparent, setHeaderTransparent] = useState(true); // Defina o estado inicial
+  const [isHeaderVisible, setIsHeaderVisible] = useState(true);
 
   const showSidebar = () => setSidebar(!sidebar);
 
   useEffect(() => {
     const handleScroll = () => {
-      // Verificar a posição de rolagem atual
       if (window.scrollY > 0) {
-        // Se já houve um scroll, mantenha o cabeçalho preto
-        setHeaderTransparent(false);
+        setIsHeaderVisible(true);
+      } else {
+        setIsHeaderVisible(false);
       }
     };
 
-    // Adicionar ouvinte de evento para o evento de rolagem da janela
     window.addEventListener("scroll", handleScroll);
 
-    // Remover o ouvinte de evento ao desmontar o componente
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   return (
-    <Container transparent={headerTransparent}>
-      <header className="navbar active">
+    <Container>
+      <header className={`navbar ${isHeaderVisible ? "active" : ""}`}>
         <div className="left-icons">
           <FaBars onClick={showSidebar} />
           {sidebar && <Sidebar active={setSidebar} />}
@@ -45,7 +42,10 @@ function Header() {
         </div>
         <div className="right-icons">
           <AccountSvg />
-          <ShopCartSvg />
+          <button className="cart-button">
+            <ShopCartSvg />
+            <span className="cart-item-count">{cartItemCount}</span>
+          </button>
         </div>
       </header>
     </Container>

@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./index.css";
+import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
 import MenuHome from "./components/MenuHome/MenuHome";
 import Footer from "./components/Footer/Footer";
@@ -16,7 +17,6 @@ import Pudim from "./img/Pudim.png";
 import Especial from "./img/Especial.png";
 import Tradicional from "./img/Tradicional.png";
 import Kit from "./img/Kit.png";
-import Club from "./img/Club.png";
 
 const coffesList = [
   {
@@ -94,34 +94,35 @@ const menuList = [
     alt: "Kits",
     title: "Kits",
   },
-  {
-    id: 4,
-    img: Club,
-    alt: "Wecoffee club",
-    title: "WeCoffee Club+",
-  },
 ];
 const homeList = [
-  { id:1,
+  {
+    id: 1,
     img: Cafe1,
     text: ".[Café Dev]; 500ml",
     complement: "com 10% OFF",
     alt: "Banner 1",
-},
-{
-  id:2,
-  img: Cafe2,
-  text: "Café Designer - 500ml",
-  complement: "Lançamento",
-  alt: "Banner 2",
-},
-]
+  },
+  {
+    id: 2,
+    img: Cafe2,
+    text: "Café Designer - 500ml",
+    complement: "Lançamento",
+    alt: "Banner 2",
+  },
+];
 function App() {
+  const [cart, setCart] = useState([]);
+
+  const addToCart = (product) => {
+    setCart([...cart, product]);
+  };
   return (
     <div className="App">
-      <Home homeList={homeList}/>
+      <Header cartItemCount={cart.length} />
+      <Home homeList={homeList} />
       <MenuHome menuList={menuList} />
-      <ProductCard coffesList={coffesList} />
+      <ProductCard coffesList={coffesList} onAddToCart={addToCart} />
       <InfoCard infoList={infoList} />
       <Footer />
     </div>

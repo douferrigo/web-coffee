@@ -2,6 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import "./styles.css";
 function MenuHome(props) {
   const homeCarrossel = {
     dots: false,
@@ -13,13 +14,13 @@ function MenuHome(props) {
   };
   return (
     <Slider {...homeCarrossel}>
-      {props.menuList.map((item)=>(
-        <div className="img-menu">
-        <div className="img-container">
-          <img src={item.img} alt={item.alt} />
+      {props.menuList.map((item) => (
+        <div className="img-menu" key={item.id}>
+          <div className="img-container">
+            <img src={item.img} alt={item.alt} />
+          </div>
+          <p>{item.title}</p>
         </div>
-        <p>{item.title}</p>
-      </div>
       ))}
     </Slider>
   );
